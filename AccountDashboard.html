@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounts Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWNjb3VudHN8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background: rgba(34, 134, 139, 0.8);
+      color: white;
+      height: 100vh;
+      padding: 20px;
+      position: fixed;
+      backdrop-filter: blur(10px);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: white;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .sidebar-box {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .sidebar-box:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateX(5px);
+    }
+
+    .sidebar-box a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .main-content {
+      margin-left: 280px;
+      padding: 30px;
+      width: calc(100% - 280px);
+      color: white;
+    }
+
+    .welcome-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .summary-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .card .amount {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .total-paid { color: #4ecdc4; }
+    .students-count { color: #45b7d1; }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Accounts Panel</h2>
+    
+    <div class="sidebar-box" onclick="location.href='fees_collection.php'">
+      <a href="fees_collection.php">💰 Fees Collection</a>
+    </div>
+
+    <div class="sidebar-box" onclick="location.href='reports.php'">
+      <a href="reports.php">📄 Generate Report</a>
+    </div>
+
+    <div class="sidebar-box" onclick="location.href='account_logout.php'">
+      <a href="account_logout.php">🚪 Logout</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="welcome-box">
+      <h1>Accounts Dashboard</h1>
+      <p>Manage student fees and generate reports</p>
+    </div>
+
+    <div class="summary-cards">
+      <div class="card">
+        <h3>Total Collected</h3>
+        <div class="amount total-paid">৳ 85,000</div>
+      </div>
+
+      <div class="card">
+        <h3>Total Students</h3>
+        <div class="amount students-count">25</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

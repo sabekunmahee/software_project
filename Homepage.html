@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Management System</title>
+  <link rel="stylesheet" href="Homecss.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <h1 class="logo">🏫 Hostel Management System</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- Admin login link -->
+          <li><a href="admin/adminlogin.php" class="highlight">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>A Safe Heaven for Women Students</h1>
+      <p>Safe, comfortable and well-managed hostel for students.</p>
+      <a href="#facilities" class="btn">Explore Facilities</a>
+    </div>
+  </section>
+
+  <!-- ===== FACILITIES ===== -->
+  <section id="facilities" class="section">
+    <h2>🏠 Our Facilities</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Spacious Rooms</h3>
+        <p>Clean and comfortable rooms for students with all amenities.</p>
+      </div>
+      <div class="card">
+        <h3>24/7 Security</h3>
+        <p>Round-the-clock CCTV and guard service for your safety 24/7 hours.</p>
+      </div>
+      <div class="card">
+        <h3>Wi-Fi & Study Area</h3>
+        <p>High-speed internet and peaceful environment for study.</p>
+      </div>
+      <div class="card">
+        <h3>Canteen Service</h3>
+        <p>Nutritious and hygienic meals served daily.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RULES ===== -->
+  <section id="rules" class="section dark">
+    <h2>📜 Hostel Rules & Regulations</h2>
+    <ul class="rules-list">
+      <li>Maintain cleanliness and discipline inside the hostel.</li>
+      <li>No loud music or parties after 10 PM.</li>
+      <li>Visitors are allowed only during visiting hours.</li>
+      <li>Respect hostel staff and other residents.</li>
+    </ul>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section">
+    <h2>📸 Hostel Gallery</h2>
+    <div class="gallery-grid">
+      <div class="card">
+        <h3>Room</h3>
+        <img src="roombed.jpeg" alt="Room" />
+      </div>
+      <div class="card">
+        <h3>Dining Area</h3>
+        <img src="dining.jpeg" alt="Dining Image" />
+      </div>
+      <div class="card">
+        <h3>Study Area</h3>
+        <img src="Studyroom.jpeg" alt="Study Area Image" />
+      </div>
+      <div class="card">
+        <h3>Hostel Building</h3>
+        <img src="Hostelbuilding.jpeg" alt="Hostel Building Image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGIN SECTION ===== -->
+  <section id="login-section" class="section role-login">
+    <h2>🔐 Login Portal</h2>
+    <p>Select your role to sign in</p>
+    <div class="login-grid">
+      <!-- Admin Login -->
+      <div class="login-card admin">
+        <h3>Admin Login</h3>
+        <p>Manage hostel operations, rooms & students.</p>
+        <button class="login-btn" onclick="window.location.href='/hms/Adminlogin.php'">
+          Login as Admin
+        </button>
+      </div>
+
+      <!-- Student Login -->
+      <div class="login-card student">
+        <h3>Student Login</h3>
+        <p>View room info, make complaints, and check dues.</p>
+        <button class="login-btn" onclick="window.location.href='/hms/Studentlogin.php'">
+          Login as Student
+        </button>
+      </div>
+
+      <!-- Accounts Login -->
+      <div class="login-card accounts">
+        <h3>Accounts Login</h3>
+        <p>Manage student payments and financial records.</p>
+        <button class="login-btn" onclick="window.location.href='/hms/Accountslogin.php'">
+          Login as Accounts
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section dark">
+    <h2>📞 Contact Us</h2>
+    <p>Email: Amaderhostel@gmail.com</p>
+    <p>Phone: +880 1234 567890</p>
+    <p>Address: Notunbazar, Noyanogor Road, Dhaka, Bangladesh</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Hostel Management System | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
